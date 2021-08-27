@@ -1,0 +1,5 @@
+gcc -c funcao.c
+
+gcc -c main. c
+
+gcc -o funcao.o main.o

@@ -1,0 +1,7 @@
+gcc -c principal.c
+
+gcc -c diretorio.c
+
+gcc -c arquivo.c
+
+gcc -o programa arquivo.o diretorio.o principal.o

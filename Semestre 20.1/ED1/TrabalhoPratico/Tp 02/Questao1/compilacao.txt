@@ -1,0 +1,7 @@
+gcc -c main.c
+
+gcc -c funcoes.c
+
+gcc -o programa main.o funcoes.o
+
+./programa vetores.txt

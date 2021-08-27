@@ -1,0 +1,9 @@
+Nathann Zini dos Reis 19.2.4007
+
+Questão 1:
+Explique a seguinte sentença: “Árvores B são construídas de baixo para cima, enquanto árvores binárias são construídas de cima para baixo”.
+
+
+Resposta:
+ As árvores binárias funcionam de modo que você tem um primeiro valor, que é a raiz, e os próximos ssão colocados à esquerda ou à direita da raiz/nó pai de acordo com a lógica do programa. Desse modo, as folhas poderão estar em diferentes niveis/alturas;
+ Diferentemente, a Arvore B funciona de modo que os dados ssão inseridos de baixo para cima, a fim de manter a arvore igualmente destribuida, ou seja, todas as folhas estarão no mesmo nivel/altura; 

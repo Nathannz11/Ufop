@@ -1,0 +1,5 @@
+gcc -c vetor_util.c
+
+gcc -c principal.c
+
+gcc -o prog vetor_util.o principal.o

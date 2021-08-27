@@ -1,0 +1,5 @@
+gcc -c pratica4.c
+
+gcc -c main.c
+
+gcc -o programa pratica4.o main.o

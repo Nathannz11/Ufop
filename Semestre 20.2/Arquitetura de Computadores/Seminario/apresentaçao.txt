@@ -1,0 +1,48 @@
+Os designs industriais têm uma variedade de categorias que requer diferentes tipos de soluções dependendo da funcionalidade específica e o nível de sofisticação
+
+ExEMPLO DE ÁREAS
+eletrodomesticos
+controle e iluminação inteligente
+medição e energia inteligente
+controle de motor
+
+
+No ramo de Home Appliances, o objetivo da empresa é facilitar à equipe a implementação dos aplicativos por meio do fornecimento de soluções que irão ajudar a implementar os novos recursos e funcionalidades necessários para os projetos de eletrodomésticos, como interface de usuário, controle de motor, detecção/sensores, conectividade e muito mais.
+
+A conectividade entre os aparelhos domésticos estão cada vez mais necessários, devido à impulsão em direção à energia inteligente (Smart Energy). A Microchip oferece diversas soluções de conectividade com ou sem fio, além de suporte a uma variedade de protocolos de software para fornecer soluções econômicas que são muito fáceis de implementar nos produtos.
+
+EXEMPLOS DE SOLUÇÕES CONECTIVIDADE
+
+Os controladores de rede de Wi-Fi são baseados em microcontrolador (MCU) e designs de baixo consumo de energia:
+	Módulos certificados para garantir a interoperabilidade; 
+	Projetado para uso com MCUs e, aplicativos incorporados; 
+	Segurança pessoal/empresarial WPA2; 
+	Ideal para aplicações sem fio e alimentadas por bateria.
+
+SPI 
+
+são oferecidos dois módulos de controlador de rede que são projetados para adicionar facilmente conectividade Wi-Fi ou Wi-Fi + Bluetooth® Low Energy ao seu projeto.
+
+ATWINC1500
+  é um controlador de rede  ideal para soluções MCU existentes, trazendo recursos de rede e Wi-Fi por meio da interface SPI-para-Wi-Fi.  
+
+ATWINC3400
+ é bem semelhante ao modelo anterior, a pricipal diferença é que oferece recursos além de rede Wi-fi, recurso de Bluetooth Low Energy por meio da interface SPI - to - Wi-fi
+
+
+INTERFACE HUMANA
+
+A Microchip oferece uma ampla linha de microcontroladores que integram controladores LCD, telas sensíveis ao toque, capacitivos (incluindo tampa de metal), feedback de áudio e iluminação LED. Soluções prontas para uso junto com extensos recursos técnicos gratuitos ajudam a minimizar o tempo de projeto e reduzir custos. Essas soluções apresentam interfaces de usuário elegantes e intuitivas em eletrodomésticos e também em produtos eletrônicos, simples, seguros e corretos.
+
+Sensor de toque:
+	Capacidade
+	Capacitância projetada
+	Resistivo
+LCD segmentado:
+	Até 512 segmentos de LCD
+	Unidade direta de monitores baratos e de baixo consumo
+	Dirija o LCD enquanto economiza energia em modos de baixo consumo
+Gráficos Embutidos:
+	Gráficos de alto desempenho
+	Ambiente de desenvolvimento totalmente acoplado
+	Bibliotecas e ferramentas gratuitas

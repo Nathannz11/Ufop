@@ -1,0 +1,9 @@
+nome: Nathann Zini dos Reis 
+matricula: 19.2.4007
+
+Questão 03
+Num arquivo .pdf ou .txt, responda se é possível que o resultado impresso pelo programa seja diferente entre os
+algoritmos BubbleSort, InsertionSort, SelectionSort e MergeSort? Por quê?
+
+Resposta: Acredito que não, uma vez que, embora em tempo diferente e com custos diferentes, os 4 tipos de algorítimos citados na pergunta ordenam os vetores obtendo,
+portanto, uma sequencia (crescente ou descrescente, ou como solicitado) da mesma maneira.

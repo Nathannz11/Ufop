@@ -1,0 +1,7 @@
+gcc -c principal.c
+
+gcc -c circulo.c
+
+gcc -c ponto.c
+
+gcc -o programa principal.o circulo.o ponto.o

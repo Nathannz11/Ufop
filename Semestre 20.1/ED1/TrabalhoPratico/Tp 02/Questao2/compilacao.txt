@@ -1,0 +1,9 @@
+gcc -c arvore.c
+
+gcc -c main .c
+
+gcc -c lista.c
+
+gcc -c pilha.c
+
+gcc -o programa arvore.o main.o lista.o pilha.o

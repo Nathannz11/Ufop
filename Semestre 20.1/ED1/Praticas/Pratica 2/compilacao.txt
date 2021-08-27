@@ -1,0 +1,5 @@
+gcc -c ponto.c
+
+gcc -c principal.c
+
+gcc -o prog ponto.o principal.o

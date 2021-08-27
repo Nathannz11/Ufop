@@ -1,0 +1,3 @@
+Para executar o primeiro programa, utiliza algum dos arquivos de textos que está junto na pasta da questão 1
+
+exemplo "./programa vetor100.txt"

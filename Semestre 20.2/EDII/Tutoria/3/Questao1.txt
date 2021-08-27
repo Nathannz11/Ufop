@@ -1,0 +1,3 @@
+Nathann zini dos Reis 19.2.4007
+
+A diferença entre a árvore B e a árvore B* é que enquanto os registros da árvoreB ficam destribuidos ao longo de todos os níveis da árvore, os registros da ÁvoreB* ficam apenas nas páginas folhas ou externas, e nos demais níveis ficam apenas as chaves de referência de encaminhamento;

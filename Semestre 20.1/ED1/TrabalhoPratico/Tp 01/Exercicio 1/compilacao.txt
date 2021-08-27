@@ -1,0 +1,5 @@
+gcc -c jogoDaVelha.c
+
+gcc -c main.c
+
+gcc -o programa jogoDaVelha.o main.o

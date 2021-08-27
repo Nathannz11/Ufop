@@ -1,0 +1,7 @@
+gcc -c jogador.c
+
+gcc -c jokempo.c
+
+gcc -c main.c
+
+gcc -o programa jogador.o jokempo.o main.o

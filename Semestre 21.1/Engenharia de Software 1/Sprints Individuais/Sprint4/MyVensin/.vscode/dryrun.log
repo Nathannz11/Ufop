@@ -1,0 +1,11 @@
+make.exe -f "D:\Documentos\Nathann\Semestre 4\Engenharia de Software 1\Sprints Individuais\Sprint4\MyVensin" --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/Documentos/Nathann/Semestre 4/Engenharia de Software 1/Sprints Individuais/Sprint4/MyVensin'
+ 
+make: D:\Documentos\Nathann\Semestre 4\Engenharia de Software 1\Sprints Individuais\Sprint4\MyVensin: Permission denied
+ 
+make: *** No rule to make target 'D:\Documentos\Nathann\Semestre 4\Engenharia de Software 1\Sprints Individuais\Sprint4\MyVensin'.
+make: Failed to remake makefile 'D:\Documentos\Nathann\Semestre 4\Engenharia de Software 1\Sprints Individuais\Sprint4\MyVensin'.
+make: *** No targets specified and no makefile found.  Stop.
+ 
+make: Leaving directory 'd:/Documentos/Nathann/Semestre 4/Engenharia de Software 1/Sprints Individuais/Sprint4/MyVensin'
+ 

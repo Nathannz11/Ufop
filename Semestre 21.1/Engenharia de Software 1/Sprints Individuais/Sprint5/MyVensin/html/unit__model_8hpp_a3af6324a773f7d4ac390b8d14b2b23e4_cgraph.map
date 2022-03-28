@@ -1,0 +1,10 @@
+<map id="unit_model_removeSystem" name="unit_model_removeSystem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,184,133"/>
+<area shape="rect" id="node2" href="$class_model.html#af44c12bce2645f91b796e750ddbacbd2" title=" " alt="" coords="232,5,380,32"/>
+<area shape="rect" id="node3" href="$class_model.html#a03b66ebb450f75af303cd2259506f57c" title=" " alt="" coords="238,56,374,83"/>
+<area shape="rect" id="node6" href="$class_model.html#aeba26e42578aa913811da206a108fc2d" title=" " alt="" coords="233,107,379,133"/>
+<area shape="rect" id="node7" href="$class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title=" " alt="" coords="237,157,375,184"/>
+<area shape="rect" id="node8" href="$class_model.html#a9b60227e076ef0cb6e983eb55fb1ddc7" title=" " alt="" coords="253,208,359,235"/>
+<area shape="rect" id="node4" href="$class_model_impl.html#a9023cfa0bdab36196ce550070d87e27f" title=" " alt="" coords="428,56,588,83"/>
+<area shape="rect" id="node5" href="$class_model_impl.html#a71f4c41a9c1b5c4aea0a859216f13aa6" title=" " alt="" coords="636,56,784,83"/>
+</map>

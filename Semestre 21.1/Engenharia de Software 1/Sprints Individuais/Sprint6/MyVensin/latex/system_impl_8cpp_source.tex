@@ -1,0 +1,98 @@
+\hypertarget{system_impl_8cpp_source}{}\doxysection{system\+Impl.\+cpp}
+\label{system_impl_8cpp_source}\index{src/lib/systemImpl.cpp@{src/lib/systemImpl.cpp}}
+\mbox{\hyperlink{system_impl_8cpp}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00001}00001 \textcolor{comment}{//Aluno: Nathann Zini dos Reis}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00002}00002 \textcolor{comment}{//Matricula: 19.2.4007}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}../include/systemImpl.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00006}\mbox{\hyperlink{class_system_body_ac4c3f4bd7bdcd6a34b942f0b2aff618e}{00006}} SystemBody :: SystemBody(\textcolor{keywordtype}{string} name, \textcolor{keywordtype}{double} valorIni) : nome(name), valorInicial(valorIni)\{\};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00008}\mbox{\hyperlink{class_system_body_a3087c37788fb37dad0538eccb5485cfd}{00008}} \mbox{\hyperlink{class_system_body_a3087c37788fb37dad0538eccb5485cfd}{SystemBody :: \string~SystemBody}}()\{\};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00010}\mbox{\hyperlink{class_system_body_a4fac16a83ba020100a08c598544f6895}{00010}} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_body_a4fac16a83ba020100a08c598544f6895}{SystemBody :: getNome}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00011}00011     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_system_body_a1707c9ca9bf25709fbd56cea635c55e1}{nome}};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00012}00012 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00013}\mbox{\hyperlink{class_system_body_ad965bd6a34a74299860ccff255339777}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_ad965bd6a34a74299860ccff255339777}{SystemBody :: setNome}}(\textcolor{keywordtype}{string} nome)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00014}00014     this-\/>nome = \mbox{\hyperlink{class_system_body_a1707c9ca9bf25709fbd56cea635c55e1}{nome}};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00017}\mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{00017}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{SystemBody :: getValorInicial}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_system_body_a57f045d67c627c607ffc06705a6b9fb4}{valorInicial}};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00020}\mbox{\hyperlink{class_system_body_a2231b61599f04274bf4dcad120d528df}{00020}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_a2231b61599f04274bf4dcad120d528df}{SystemBody :: setValorInicial}}(\textcolor{keywordtype}{double} valorInicial)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00021}00021     this-\/>valorInicial = \mbox{\hyperlink{class_system_body_a57f045d67c627c607ffc06705a6b9fb4}{valorInicial}};}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00024}\mbox{\hyperlink{class_system_body_aae9ff8c0a5d2db82b3f9b1435ce35958}{00024}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aae9ff8c0a5d2db82b3f9b1435ce35958}{SystemBody::operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sistema)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00025}00025     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() + sistema.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00028}\mbox{\hyperlink{class_system_body_a7633e9592ce8a473f050113097667449}{00028}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aae9ff8c0a5d2db82b3f9b1435ce35958}{SystemBody::operator+}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00029}00029     \textcolor{keywordflow}{return} valueSys + \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00030}00030 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00033}\mbox{\hyperlink{system_8hpp_a5f7db38031de89779fee3304f59189b0}{00033}} \textcolor{keywordtype}{double} \mbox{\hyperlink{system_impl_8cpp_a5f7db38031de89779fee3304f59189b0}{operator+}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys, \textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00034}00034     \textcolor{keywordflow}{return} sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}() + valueSys;}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00037}\mbox{\hyperlink{class_system_body_a774b668c9c5830b6e42498c0e27a5ec0}{00037}} \textcolor{keywordtype}{double}  \mbox{\hyperlink{class_system_body_a774b668c9c5830b6e42498c0e27a5ec0}{SystemBody::operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00038}00038     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() -\/ sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00041}\mbox{\hyperlink{class_system_body_aee4da257e3b8763eb44695c64d23263e}{00041}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a774b668c9c5830b6e42498c0e27a5ec0}{SystemBody::operator-\/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00042}00042     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() -\/ valueSys;}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00043}00043 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00045}\mbox{\hyperlink{system_8hpp_a78e464d685ddedb98784f6be5d0a57c6}{00045}} \textcolor{keywordtype}{double} \mbox{\hyperlink{system_impl_8cpp_a78e464d685ddedb98784f6be5d0a57c6}{operator-\/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys, \textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00046}00046     \textcolor{keywordflow}{return} valueSys -\/ sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00049}\mbox{\hyperlink{class_system_body_aa021bd0f3ea4f07d9eb7b2ee70e8a8ff}{00049}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aa021bd0f3ea4f07d9eb7b2ee70e8a8ff}{SystemBody::operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00050}00050     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() * sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00053}\mbox{\hyperlink{class_system_body_a35a76f5bbb281341c454f77f35f711ba}{00053}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aa021bd0f3ea4f07d9eb7b2ee70e8a8ff}{SystemBody::operator*}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00054}00054     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() * valueSys;}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00057}\mbox{\hyperlink{system_8hpp_a33e83bfbe6c9fb37bd7db48e44c118eb}{00057}} \textcolor{keywordtype}{double} \mbox{\hyperlink{system_impl_8cpp_a33e83bfbe6c9fb37bd7db48e44c118eb}{operator*}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys, \textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00058}00058     \textcolor{keywordflow}{return} valueSys * sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00061}\mbox{\hyperlink{class_system_body_a4d10b8fa7b82b7ca8022a96780caabb1}{00061}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a4d10b8fa7b82b7ca8022a96780caabb1}{SystemBody::operator/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00062}00062     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() / sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00063}00063 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00065}\mbox{\hyperlink{class_system_body_ad69276058bf63b649044fb5cea509476}{00065}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a4d10b8fa7b82b7ca8022a96780caabb1}{SystemBody::operator/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00066}00066     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_system_body_a67adb719c57f57ed95105357d6d05e6a}{getValorInicial}}() / valueSys;}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00069}\mbox{\hyperlink{system_8hpp_a77cd5f5837acd7902381c3f762e42652}{00069}} \textcolor{keywordtype}{double} \mbox{\hyperlink{system_impl_8cpp_a77cd5f5837acd7902381c3f762e42652}{operator/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys, \textcolor{keyword}{const} \mbox{\hyperlink{class_system}{System}}\& sys)\{}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00070}00070     \textcolor{keywordflow}{return} valueSys / sys.\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00072}00072 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00073}00073 \textcolor{comment}{SystemBody::SystemBody(const SystemBody\& sistema)\{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00074}00074 \textcolor{comment}{    if (this == \&sistema)\{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00075}00075 \textcolor{comment}{        return;}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00076}00076 \textcolor{comment}{    \}}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00077}00077 \textcolor{comment}{            }}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00078}00078 \textcolor{comment}{    nome = sistema.getNome();}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00079}00079 \textcolor{comment}{    valorInicial = sistema.getValorInicial();}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00080}00080 \textcolor{comment}{\}}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00081}00081 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00082}00082 \textcolor{comment}{SystemBody\& SystemBody :: operator=(const SystemBody\& sistema)\{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00083}00083 \textcolor{comment}{    if (this == \&sistema)\{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00084}00084 \textcolor{comment}{        return *this;}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00085}00085 \textcolor{comment}{    \}}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00086}00086 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00087}00087 \textcolor{comment}{    this-\/>nome = sistema.getNome();}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00088}00088 \textcolor{comment}{    this-\/>valorInicial = sistema.getValorInicial();  }}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00089}00089 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00090}00090 \textcolor{comment}{    return *this;}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00091}00091 \textcolor{comment}{\}}}
+\DoxyCodeLine{\Hypertarget{system_impl_8cpp_source_l00092}00092 \textcolor{comment}{*/}}
+
+\end{DoxyCode}

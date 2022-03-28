@@ -1,0 +1,252 @@
+\hypertarget{class_system}{}\doxysection{Referência da Classe System}
+\label{class_system}\index{System@{System}}
+
+
+Class \mbox{\hyperlink{class_system}{System}}.  
+
+
+
+
+{\ttfamily \#include $<$system.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_system__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_system_a2fc0f34023977cab9b628aa9f734d88c}{$\sim$\+System}} ()
+\item 
+virtual string \mbox{\hyperlink{class_system_adf5276bbdc57e0e85013cca566d749e5}{get\+Nome}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_system_a96dedbbeddb18699a990567056c31850}{set\+Nome}} (string nome)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{get\+Valor\+Inicial}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_system_a36129ec842c3fdf1553b6925f3534886}{set\+Valor\+Inicial}} (double valor\+Inicial)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a37d1a067f570cd3ac8a0d894e75f706b}{operator+}} (const \mbox{\hyperlink{class_system}{System}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_aefc7645023b654b762bfb1bc12ea3126}{operator+}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a426a13be25e9dcda4ec58b8aca997384}{operator-\/}} (const \mbox{\hyperlink{class_system}{System}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_abe10ddaa06796eea200b197e566feeab}{operator-\/}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a64e91c0b607abf045e0794683c3f7446}{operator$\ast$}} (const \mbox{\hyperlink{class_system}{System}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a1f2a5670d9b49669c5500a4febee4943}{operator$\ast$}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a6e49810394f8a24356c925931707818e}{operator/}} (const \mbox{\hyperlink{class_system}{System}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_a3f4f0fa4585a6c5ac92465a34442fafc}{operator/}} (const double \&value\+Sys)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_system}{System}}. 
+
+Essa classe representa um sistema de um \char`\"{}modelo\char`\"{} de sistema do código. 
+
+Definição na linha \mbox{\hyperlink{system_8hpp_source_l00015}{15}} do arquivo \mbox{\hyperlink{system_8hpp_source}{system.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_system_a2fc0f34023977cab9b628aa9f734d88c}\label{class_system_a2fc0f34023977cab9b628aa9f734d88c}} 
+\index{System@{System}!````~System@{$\sim$System}}
+\index{````~System@{$\sim$System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{$\sim$System()}{~System()}}
+{\footnotesize\ttfamily virtual System\+::$\sim$\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definição na linha \mbox{\hyperlink{system_8hpp_source_l00020}{20}} do arquivo \mbox{\hyperlink{system_8hpp_source}{system.\+hpp}}.
+
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_system_adf5276bbdc57e0e85013cca566d749e5}\label{class_system_adf5276bbdc57e0e85013cca566d749e5}} 
+\index{System@{System}!getNome@{getNome}}
+\index{getNome@{getNome}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily virtual string System\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retorna o atributo nome do objeto da classe \mbox{\hyperlink{class_system}{System}}. \begin{DoxyReturn}{Retorna}
+string -\/ o conteúdo de atributo nome. 
+\end{DoxyReturn}
+
+
+Implementado por \mbox{\hyperlink{class_system_handle_a5ab68bdc219fbccf5b05fd0952141a93}{System\+Handle}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_adf5276bbdc57e0e85013cca566d749e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_a79660e354b2b29709f9b0671d07cc021}\label{class_system_a79660e354b2b29709f9b0671d07cc021}} 
+\index{System@{System}!getValorInicial@{getValorInicial}}
+\index{getValorInicial@{getValorInicial}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValorInicial()}{getValorInicial()}}
+{\footnotesize\ttfamily virtual double System\+::get\+Valor\+Inicial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retorna o atributo valor\+Inicial do objeto da classe Sistema. \begin{DoxyReturn}{Retorna}
+double -\/ o conteúdo de atributo valor\+Inicial. 
+\end{DoxyReturn}
+
+
+Implementado por \mbox{\hyperlink{class_system_handle_a36dc2c864969ca32ffbbd9d81a7ca2ea}{System\+Handle}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a79660e354b2b29709f9b0671d07cc021_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_a1f2a5670d9b49669c5500a4febee4943}\label{class_system_a1f2a5670d9b49669c5500a4febee4943}} 
+\index{System@{System}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}$\ast$\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_ad07d2aacb61673302fcac9aca5f1abfa}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a64e91c0b607abf045e0794683c3f7446}\label{class_system_a64e91c0b607abf045e0794683c3f7446}} 
+\index{System@{System}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}$\ast$\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_aae7c563bda37cdc0961a587b6480143a}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_aefc7645023b654b762bfb1bc12ea3126}\label{class_system_aefc7645023b654b762bfb1bc12ea3126}} 
+\index{System@{System}!operator+@{operator+}}
+\index{operator+@{operator+}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator+ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}+\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_af7e3aa58e9159f00ed966db26d608852}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a37d1a067f570cd3ac8a0d894e75f706b}\label{class_system_a37d1a067f570cd3ac8a0d894e75f706b}} 
+\index{System@{System}!operator+@{operator+}}
+\index{operator+@{operator+}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}+\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_aeecee848cb80b4b4e013028ea4af56c4}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_abe10ddaa06796eea200b197e566feeab}\label{class_system_abe10ddaa06796eea200b197e566feeab}} 
+\index{System@{System}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator-\/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}-\/\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_a5af45c94f10d448fce5bdb173b0568c4}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a426a13be25e9dcda4ec58b8aca997384}\label{class_system_a426a13be25e9dcda4ec58b8aca997384}} 
+\index{System@{System}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}-\/\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_af137ce7de0771b5091cdba325a7d27d3}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a3f4f0fa4585a6c5ac92465a34442fafc}\label{class_system_a3f4f0fa4585a6c5ac92465a34442fafc}} 
+\index{System@{System}!operator/@{operator/}}
+\index{operator/@{operator/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}/\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_a3a4eb12a9a1374db613252af357417b6}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a6e49810394f8a24356c925931707818e}\label{class_system_a6e49810394f8a24356c925931707818e}} 
+\index{System@{System}!operator/@{operator/}}
+\index{operator/@{operator/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Essa é a sobrecarga do operador \char`\"{}/\char`\"{} para a classe \mbox{\hyperlink{class_system}{System}}. 
+
+Implementado por \mbox{\hyperlink{class_system_handle_ad505c8d7a2d72b2df12255a27d894d30}{System\+Handle}}.
+
+\mbox{\Hypertarget{class_system_a96dedbbeddb18699a990567056c31850}\label{class_system_a96dedbbeddb18699a990567056c31850}} 
+\index{System@{System}!setNome@{setNome}}
+\index{setNome@{setNome}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily virtual void System\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Seta o atributo nome do objeto da classe \mbox{\hyperlink{class_system}{System}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & que será setado ao Sistema atual. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{class_system_handle_a1a7c4fdec7db4ae27b55d94409383404}{System\+Handle}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a96dedbbeddb18699a990567056c31850_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_a36129ec842c3fdf1553b6925f3534886}\label{class_system_a36129ec842c3fdf1553b6925f3534886}} 
+\index{System@{System}!setValorInicial@{setValorInicial}}
+\index{setValorInicial@{setValorInicial}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValorInicial()}{setValorInicial()}}
+{\footnotesize\ttfamily virtual void System\+::set\+Valor\+Inicial (\begin{DoxyParamCaption}\item[{double}]{valor\+Inicial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Seta o atributo valor\+Inicial do objeto da classe Sistema. 
+\begin{DoxyParams}{Parâmetros}
+{\em valor\+Ini} & que será setado ao Sistema atual. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{class_system_handle_af2e8cba43c3bbaa806dce1be5e4525b4}{System\+Handle}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a36129ec842c3fdf1553b6925f3534886_icgraph}
+\end{center}
+\end{figure}
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{system_8hpp}{system.\+hpp}}\end{DoxyCompactItemize}

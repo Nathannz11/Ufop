@@ -1,0 +1,235 @@
+\hypertarget{class_system}{}\doxysection{Referência da Classe System}
+\label{class_system}\index{System@{System}}
+
+
+Class \mbox{\hyperlink{class_system}{System}}.  
+
+
+
+
+{\ttfamily \#include $<$system.\+hpp$>$}
+
+
+
+Diagrama de colaboração para System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_a9a596c93f3a6da473c1b93dfea722406}{System}} (string \mbox{\hyperlink{class_system_a0df121c718a4da7b5e0fec4f8701b4bf}{nome}}=\char`\"{}\char`\"{}, double valor\+Ini=0.\+0)
+\item 
+virtual \mbox{\hyperlink{class_system_a3be70bb338e3f062f821173fd15680d0}{$\sim$\+System}} ()
+\item 
+string \mbox{\hyperlink{class_system_a7f15f132370a9a787fad99b8c0258285}{get\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_system_ad801f29c08c9b9d02cd7da23b165cf77}{set\+Nome}} (string \mbox{\hyperlink{class_system_a0df121c718a4da7b5e0fec4f8701b4bf}{nome}})
+\item 
+double \mbox{\hyperlink{class_system_a5a016da6fdf963f96106f21f76f1065e}{get\+Valor\+Inicial}} () const
+\item 
+void \mbox{\hyperlink{class_system_ae07a69aea97c6ac8494a87b29fd7e3dc}{set\+Valor\+Inicial}} (double \mbox{\hyperlink{class_system_a650deeeb172815c08c738b22dc995269}{valor\+Inicial}})
+\item 
+\mbox{\hyperlink{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}{System}} (const \mbox{\hyperlink{class_system}{System}} \&sys)
+\item 
+\mbox{\hyperlink{class_system}{System}} \& \mbox{\hyperlink{class_system_aabd698666902c550784499fdb5bf2a4e}{operator=}} (const \mbox{\hyperlink{class_system}{System}} \&sistema)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_system_a0df121c718a4da7b5e0fec4f8701b4bf}{nome}}
+\item 
+double \mbox{\hyperlink{class_system_a650deeeb172815c08c738b22dc995269}{valor\+Inicial}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_system}{System}}. 
+
+Essa classe representa um sistema de um \char`\"{}modelo\char`\"{} de sistema do código. 
+
+Definição na linha \mbox{\hyperlink{system_8hpp_source_l00015}{15}} do arquivo \mbox{\hyperlink{system_8hpp_source}{system.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_system_a9a596c93f3a6da473c1b93dfea722406}\label{class_system_a9a596c93f3a6da473c1b93dfea722406}} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{string}]{nome = {\ttfamily \char`\"{}\char`\"{}},  }\item[{double}]{valor\+Ini = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Construtor mais elaborado para a classe \mbox{\hyperlink{class_system}{System}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & nome para o sistema \\
+\hline
+{\em valor\+Ini} & valor inicial para o sistema. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\mbox{\hyperlink{class_system}{System}} -\/ Um objeto da classe \mbox{\hyperlink{class_system}{System}}. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00006}{6}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a3be70bb338e3f062f821173fd15680d0}\label{class_system_a3be70bb338e3f062f821173fd15680d0}} 
+\index{System@{System}!````~System@{$\sim$System}}
+\index{````~System@{$\sim$System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{$\sim$System()}{~System()}}
+{\footnotesize\ttfamily System\+::$\sim$\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00008}{8}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}\label{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})}
+
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00025}{25}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+Este é o diagrama das funções utilizadas por essa função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_system_a7f15f132370a9a787fad99b8c0258285}\label{class_system_a7f15f132370a9a787fad99b8c0258285}} 
+\index{System@{System}!getNome@{getNome}}
+\index{getNome@{getNome}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily string System\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo nome do objeto da classe \mbox{\hyperlink{class_system}{System}}. \begin{DoxyReturn}{Retorna}
+string -\/ o conteúdo de atributo nome. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00010}{10}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_system_a7f15f132370a9a787fad99b8c0258285_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_a5a016da6fdf963f96106f21f76f1065e}\label{class_system_a5a016da6fdf963f96106f21f76f1065e}} 
+\index{System@{System}!getValorInicial@{getValorInicial}}
+\index{getValorInicial@{getValorInicial}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValorInicial()}{getValorInicial()}}
+{\footnotesize\ttfamily double System\+::get\+Valor\+Inicial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo valor\+Inicial do objeto da classe Sistema. \begin{DoxyReturn}{Retorna}
+double -\/ o conteúdo de atributo valor\+Inicial. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00017}{17}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_a5a016da6fdf963f96106f21f76f1065e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_aabd698666902c550784499fdb5bf2a4e}\label{class_system_aabd698666902c550784499fdb5bf2a4e}} 
+\index{System@{System}!operator=@{operator=}}
+\index{operator=@{operator=}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sistema }\end{DoxyParamCaption})}
+
+Sobrecarga do operador = para a classe Sistema 
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00035}{35}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+Este é o diagrama das funções utilizadas por essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_system_aabd698666902c550784499fdb5bf2a4e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_system_ad801f29c08c9b9d02cd7da23b165cf77}\label{class_system_ad801f29c08c9b9d02cd7da23b165cf77}} 
+\index{System@{System}!setNome@{setNome}}
+\index{setNome@{setNome}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void System\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+Seta o atributo nome do objeto da classe \mbox{\hyperlink{class_system}{System}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & que será setado ao Sistema atual. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00013}{13}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_ae07a69aea97c6ac8494a87b29fd7e3dc}\label{class_system_ae07a69aea97c6ac8494a87b29fd7e3dc}} 
+\index{System@{System}!setValorInicial@{setValorInicial}}
+\index{setValorInicial@{setValorInicial}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValorInicial()}{setValorInicial()}}
+{\footnotesize\ttfamily void System\+::set\+Valor\+Inicial (\begin{DoxyParamCaption}\item[{double}]{valor\+Inicial }\end{DoxyParamCaption})}
+
+Seta o atributo valor\+Inicial do objeto da classe Sistema. 
+\begin{DoxyParams}{Parâmetros}
+{\em valor\+Ini} & que será setado ao Sistema atual. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{system_8cpp_source_l00020}{20}} do arquivo \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_ae07a69aea97c6ac8494a87b29fd7e3dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{class_system_a0df121c718a4da7b5e0fec4f8701b4bf}\label{class_system_a0df121c718a4da7b5e0fec4f8701b4bf}} 
+\index{System@{System}!nome@{nome}}
+\index{nome@{nome}!System@{System}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily string System\+::nome\hspace{0.3cm}{\ttfamily [protected]}}
+
+Esse atributo contem um nome para o sistema. 
+
+Definição na linha \mbox{\hyperlink{system_8hpp_source_l00018}{18}} do arquivo \mbox{\hyperlink{system_8hpp_source}{system.\+hpp}}.
+
+\mbox{\Hypertarget{class_system_a650deeeb172815c08c738b22dc995269}\label{class_system_a650deeeb172815c08c738b22dc995269}} 
+\index{System@{System}!valorInicial@{valorInicial}}
+\index{valorInicial@{valorInicial}!System@{System}}
+\doxysubsubsection{\texorpdfstring{valorInicial}{valorInicial}}
+{\footnotesize\ttfamily double System\+::valor\+Inicial\hspace{0.3cm}{\ttfamily [protected]}}
+
+Esse atributo contem um valor inicial para o sistema. 
+
+Definição na linha \mbox{\hyperlink{system_8hpp_source_l00019}{19}} do arquivo \mbox{\hyperlink{system_8hpp_source}{system.\+hpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{system_8hpp}{system.\+hpp}}\item 
+src/\mbox{\hyperlink{system_8cpp}{system.\+cpp}}\end{DoxyCompactItemize}

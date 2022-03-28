@@ -1,0 +1,57 @@
+\hypertarget{functional__tests_8hpp_source}{}\doxysection{functional\+\_\+tests.\+hpp}
+\label{functional__tests_8hpp_source}\index{test/functional/functional\_tests.hpp@{test/functional/functional\_tests.hpp}}
+\mbox{\hyperlink{functional__tests_8hpp}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00001}00001 \textcolor{comment}{//Aluno: Nathann Zini dos Reis}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00002}00002 \textcolor{comment}{//Matricula: 19.2.4007}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00004}00004 \textcolor{preprocessor}{\#ifndef FUNCTIONAL\_TEST}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00005}00005 \textcolor{preprocessor}{\#define FUNCTIONAL\_TEST}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00007}00007 \textcolor{preprocessor}{\#include "{}../../src/systemImpl.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00008}00008 \textcolor{preprocessor}{\#include "{}../../src/flowImpl.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00009}00009 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}};}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00013}00013 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00022}00022 \textcolor{keywordtype}{void} \mbox{\hyperlink{functional__tests_8hpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponentialFuncionalTest}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00027}00027 \textcolor{keywordtype}{void} \mbox{\hyperlink{functional__tests_8hpp_a60914db64bde71b56d69320797266c29}{logisticalFuncionalTest}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00032}00032 \textcolor{keywordtype}{void} \mbox{\hyperlink{functional__tests_8hpp_a943dfe0c597a01c9760c140715fed527}{complexFuncionalTest}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00038}\mbox{\hyperlink{class_flow_exponencial}{00038}} \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_exponencial}{FlowExponencial}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_impl}{FlowImpl}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00039}00039     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00046}\mbox{\hyperlink{class_flow_exponencial_abe5d53664ea2977669d2c1a860148991}{00046}}         \mbox{\hyperlink{class_flow_exponencial_abe5d53664ea2977669d2c1a860148991}{FlowExponencial}}(\textcolor{keywordtype}{string} nome = \textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}}* origem = NULL, \mbox{\hyperlink{class_system}{System}}* destino = NULL): \mbox{\hyperlink{class_flow_impl}{FlowImpl}}(nome, origem, destino)\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00051}\mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{00051}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{run}}()\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00052}00052             \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_impl_a8d29d8b1e70224528ad7ff2d6a1baf0e}{getOrigem}}()-\/>\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00053}00053         \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00054}00054 \};}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00060}\mbox{\hyperlink{class_flow_logistico}{00060}} \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_logistico}{FlowLogistico}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_impl}{FlowImpl}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00061}00061     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00068}\mbox{\hyperlink{class_flow_logistico_af7a97614c2df264ccaf4cdbfaf142f09}{00068}}         \mbox{\hyperlink{class_flow_logistico_af7a97614c2df264ccaf4cdbfaf142f09}{FlowLogistico}}(\textcolor{keywordtype}{string} nome, \mbox{\hyperlink{class_system}{System}}* origem, \mbox{\hyperlink{class_system}{System}}* destino): \mbox{\hyperlink{class_flow_impl}{FlowImpl}}(nome, origem, destino)\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00072}\mbox{\hyperlink{class_flow_logistico_aa7c367618bbbfd3c14ef27b7c95a595c}{00072}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_logistico_aa7c367618bbbfd3c14ef27b7c95a595c}{run}}()\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00073}00073             \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_impl_ac85639e03febf755c7f12a77acda2d6a}{getDestino}}()-\/>\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}() * (1 -\/ \mbox{\hyperlink{class_flow_impl_ac85639e03febf755c7f12a77acda2d6a}{getDestino}}()-\/>\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}() / 70);}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00075}00075 \};}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00077}\mbox{\hyperlink{class_flow_complexo}{00077}} \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_complexo}{FlowComplexo}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_impl}{FlowImpl}}\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00078}00078     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00085}\mbox{\hyperlink{class_flow_complexo_a3cc0a77ea21e1d643f992cec4b94775b}{00085}}         \mbox{\hyperlink{class_flow_complexo_a3cc0a77ea21e1d643f992cec4b94775b}{FlowComplexo}}(\textcolor{keywordtype}{string} nome = \textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}}* origem = NULL, \mbox{\hyperlink{class_system}{System}}* destino = NULL): \mbox{\hyperlink{class_flow_impl}{FlowImpl}}(nome, origem, destino)\{\}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00091}\mbox{\hyperlink{class_flow_complexo_a0513bff681502201db3fd243c8e9bac2}{00091}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_complexo_a0513bff681502201db3fd243c8e9bac2}{run}}()\{}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00092}00092             \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_impl_a8d29d8b1e70224528ad7ff2d6a1baf0e}{getOrigem}}()-\/>\mbox{\hyperlink{class_system_a79660e354b2b29709f9b0671d07cc021}{getValorInicial}}();}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00093}00093         \}}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00094}00094 \};}
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{functional__tests_8hpp_source_l00097}00097 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

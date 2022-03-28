@@ -1,0 +1,190 @@
+\hypertarget{class_model}{}\doxysection{Referência da Classe Model}
+\label{class_model}\index{Model@{Model}}
+
+
+Class \mbox{\hyperlink{class_model}{Model}}.  
+
+
+
+
+{\ttfamily \#include $<$model.\+hpp$>$}
+
+
+
+Diagrama de colaboração para Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_a74ffc3aa1ffeea2130ac311138a6dd55}{Model}} (string nome=\char`\"{}\char`\"{})
+\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\item 
+string \mbox{\hyperlink{class_model_a23ac42f1c36461772e531ce8e4998a1d}{get\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_model_ae9f4e8a9fb98e04cba65aec431496331}{set\+Nome}} (string nome)
+\item 
+void \mbox{\hyperlink{class_model_a38cad2116d43a8fb52931d19d31e4fdf}{run}} (double inicio=0.\+0, double fim=0.\+0)
+\item 
+void \mbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\item 
+void \mbox{\hyperlink{class_model_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\item 
+void \mbox{\hyperlink{class_model_a34d37567d62c127c6407446463a27358}{remove}} (\mbox{\hyperlink{class_system}{System}} $\ast$sistema)
+\item 
+void \mbox{\hyperlink{class_model_a7b41df04211b99c65d5255c09ddc8e71}{remove}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_model}{Model}}. 
+
+Essa classe representa um modelo de sistema do código. 
+
+Definição na linha \mbox{\hyperlink{model_8hpp_source_l00016}{16}} do arquivo \mbox{\hyperlink{model_8hpp_source}{model.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_model_a74ffc3aa1ffeea2130ac311138a6dd55}\label{class_model_a74ffc3aa1ffeea2130ac311138a6dd55}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{string}]{nome = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Construtor mais elaborado para a classe \mbox{\hyperlink{class_model}{Model}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & nome para o modelo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\mbox{\hyperlink{class_model}{Model}} -\/ Um objeto da classe \mbox{\hyperlink{class_model}{Model}}. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00007}{7}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00009}{9}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_model_ab69613bde0ace81c92bbf519660ccb2c}\label{class_model_ab69613bde0ace81c92bbf519660ccb2c}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})}
+
+Remove um sistema do modelo 
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00023}{23}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\mbox{\Hypertarget{class_model_a302d4ed93c6e6f9a0f728e021a91f821}\label{class_model_a302d4ed93c6e6f9a0f728e021a91f821}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+Adiciona um flow ao modelo 
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00020}{20}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_a23ac42f1c36461772e531ce8e4998a1d}\label{class_model_a23ac42f1c36461772e531ce8e4998a1d}} 
+\index{Model@{Model}!getNome@{getNome}}
+\index{getNome@{getNome}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily string Model\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo nome do objeto da classe \mbox{\hyperlink{class_model}{Model}}. \begin{DoxyReturn}{Retorna}
+string -\/ o conteúdo de atributo nome. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00012}{12}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\mbox{\Hypertarget{class_model_a7b41df04211b99c65d5255c09ddc8e71}\label{class_model_a7b41df04211b99c65d5255c09ddc8e71}} 
+\index{Model@{Model}!remove@{remove}}
+\index{remove@{remove}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})}
+
+
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00067}{67}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\mbox{\Hypertarget{class_model_a34d37567d62c127c6407446463a27358}\label{class_model_a34d37567d62c127c6407446463a27358}} 
+\index{Model@{Model}!remove@{remove}}
+\index{remove@{remove}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{sistema }\end{DoxyParamCaption})}
+
+Remove um flow do modelo 
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00057}{57}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\mbox{\Hypertarget{class_model_a38cad2116d43a8fb52931d19d31e4fdf}\label{class_model_a38cad2116d43a8fb52931d19d31e4fdf}} 
+\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Model\+::run (\begin{DoxyParamCaption}\item[{double}]{inicio = {\ttfamily 0.0},  }\item[{double}]{fim = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Adiciona um sistema ao modelo 
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00027}{27}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Este é o diagrama das funções utilizadas por essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_model_a38cad2116d43a8fb52931d19d31e4fdf_cgraph}
+\end{center}
+\end{figure}
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a38cad2116d43a8fb52931d19d31e4fdf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_ae9f4e8a9fb98e04cba65aec431496331}\label{class_model_ae9f4e8a9fb98e04cba65aec431496331}} 
+\index{Model@{Model}!setNome@{setNome}}
+\index{setNome@{setNome}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Model\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+Seta o atributo nome do objeto da classe \mbox{\hyperlink{class_model}{Model}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & que será setado ao Modelo atual. Responsável por executar o sistema de acordo com o tipo de flow contido (variando a equacao). \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{model_8cpp_source_l00015}{15}} do arquivo \mbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{model_8hpp}{model.\+hpp}}\item 
+src/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

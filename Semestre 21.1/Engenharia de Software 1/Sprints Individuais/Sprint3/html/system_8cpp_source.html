@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Código-Fonte de src/system.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">system.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="system_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//Aluno: Nathann Zini dos Reis</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//Matricula: 19.2.4007</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="system_8hpp.html">system.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_system.html#a9a596c93f3a6da473c1b93dfea722406">    6</a></span><a class="code hl_function" href="class_system.html#a9a596c93f3a6da473c1b93dfea722406">System :: System</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">double</span> valorIni) : nome(name), valorInicial(valorIni){};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_system.html#a3be70bb338e3f062f821173fd15680d0">    8</a></span><a class="code hl_function" href="class_system.html#a3be70bb338e3f062f821173fd15680d0">System :: ~System</a>(){};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_system.html#a7f15f132370a9a787fad99b8c0258285">   10</a></span><span class="keywordtype">string</span> <a class="code hl_function" href="class_system.html#a7f15f132370a9a787fad99b8c0258285">System :: getNome</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_system.html#a0df121c718a4da7b5e0fec4f8701b4bf">nome</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_system.html#ad801f29c08c9b9d02cd7da23b165cf77">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_system.html#ad801f29c08c9b9d02cd7da23b165cf77">System :: setNome</a>(<span class="keywordtype">string</span> nome){</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    this-&gt;nome = <a class="code hl_variable" href="class_system.html#a0df121c718a4da7b5e0fec4f8701b4bf">nome</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_system.html#a5a016da6fdf963f96106f21f76f1065e">   17</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="class_system.html#a5a016da6fdf963f96106f21f76f1065e">System :: getValorInicial</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="class_system.html#a650deeeb172815c08c738b22dc995269">valorInicial</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_system.html#ae07a69aea97c6ac8494a87b29fd7e3dc">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_system.html#ae07a69aea97c6ac8494a87b29fd7e3dc">System :: setValorInicial</a>(<span class="keywordtype">double</span> valorInicial){</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    this-&gt;valorInicial = <a class="code hl_variable" href="class_system.html#a650deeeb172815c08c738b22dc995269">valorInicial</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_system.html#a9dd6c24612a98e55eaf1ec971bc44f4a">   25</a></span><a class="code hl_function" href="class_system.html#a9a596c93f3a6da473c1b93dfea722406">System::System</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_system.html">System</a>&amp; sys){</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;sys){</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_variable" href="class_system.html#a0df121c718a4da7b5e0fec4f8701b4bf">nome</a> = sys.<a class="code hl_function" href="class_system.html#a7f15f132370a9a787fad99b8c0258285">getNome</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_system.html#a650deeeb172815c08c738b22dc995269">valorInicial</a> = sys.<a class="code hl_function" href="class_system.html#a5a016da6fdf963f96106f21f76f1065e">getValorInicial</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_system.html#aabd698666902c550784499fdb5bf2a4e">   35</a></span><a class="code hl_class" href="class_system.html">System</a>&amp; <a class="code hl_function" href="class_system.html#aabd698666902c550784499fdb5bf2a4e">System :: operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_system.html">System</a>&amp; sistema){</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;sistema){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    this-&gt;<a class="code hl_variable" href="class_system.html#a0df121c718a4da7b5e0fec4f8701b4bf">nome</a> = sistema.<a class="code hl_function" href="class_system.html#a7f15f132370a9a787fad99b8c0258285">getNome</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    this-&gt;<a class="code hl_variable" href="class_system.html#a650deeeb172815c08c738b22dc995269">valorInicial</a> = sistema.<a class="code hl_function" href="class_system.html#a5a016da6fdf963f96106f21f76f1065e">getValorInicial</a>();  </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdoc">Class System.</div><div class="ttdef"><b>Definition:</b> <a href="system_8hpp_source.html#l00015">system.hpp:15</a></div></div>
+<div class="ttc" id="aclass_system_html_a0df121c718a4da7b5e0fec4f8701b4bf"><div class="ttname"><a href="class_system.html#a0df121c718a4da7b5e0fec4f8701b4bf">System::nome</a></div><div class="ttdeci">string nome</div><div class="ttdef"><b>Definition:</b> <a href="system_8hpp_source.html#l00018">system.hpp:18</a></div></div>
+<div class="ttc" id="aclass_system_html_a3be70bb338e3f062f821173fd15680d0"><div class="ttname"><a href="class_system.html#a3be70bb338e3f062f821173fd15680d0">System::~System</a></div><div class="ttdeci">virtual ~System()</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00008">system.cpp:8</a></div></div>
+<div class="ttc" id="aclass_system_html_a5a016da6fdf963f96106f21f76f1065e"><div class="ttname"><a href="class_system.html#a5a016da6fdf963f96106f21f76f1065e">System::getValorInicial</a></div><div class="ttdeci">double getValorInicial() const</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00017">system.cpp:17</a></div></div>
+<div class="ttc" id="aclass_system_html_a650deeeb172815c08c738b22dc995269"><div class="ttname"><a href="class_system.html#a650deeeb172815c08c738b22dc995269">System::valorInicial</a></div><div class="ttdeci">double valorInicial</div><div class="ttdef"><b>Definition:</b> <a href="system_8hpp_source.html#l00019">system.hpp:19</a></div></div>
+<div class="ttc" id="aclass_system_html_a7f15f132370a9a787fad99b8c0258285"><div class="ttname"><a href="class_system.html#a7f15f132370a9a787fad99b8c0258285">System::getNome</a></div><div class="ttdeci">string getNome() const</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00010">system.cpp:10</a></div></div>
+<div class="ttc" id="aclass_system_html_a9a596c93f3a6da473c1b93dfea722406"><div class="ttname"><a href="class_system.html#a9a596c93f3a6da473c1b93dfea722406">System::System</a></div><div class="ttdeci">System(string nome=&quot;&quot;, double valorIni=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00006">system.cpp:6</a></div></div>
+<div class="ttc" id="aclass_system_html_aabd698666902c550784499fdb5bf2a4e"><div class="ttname"><a href="class_system.html#aabd698666902c550784499fdb5bf2a4e">System::operator=</a></div><div class="ttdeci">System &amp; operator=(const System &amp;sistema)</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00035">system.cpp:35</a></div></div>
+<div class="ttc" id="aclass_system_html_ad801f29c08c9b9d02cd7da23b165cf77"><div class="ttname"><a href="class_system.html#ad801f29c08c9b9d02cd7da23b165cf77">System::setNome</a></div><div class="ttdeci">void setNome(string nome)</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00013">system.cpp:13</a></div></div>
+<div class="ttc" id="aclass_system_html_ae07a69aea97c6ac8494a87b29fd7e3dc"><div class="ttname"><a href="class_system.html#ae07a69aea97c6ac8494a87b29fd7e3dc">System::setValorInicial</a></div><div class="ttdeci">void setValorInicial(double valorInicial)</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00020">system.cpp:20</a></div></div>
+<div class="ttc" id="asystem_8hpp_html"><div class="ttname"><a href="system_8hpp.html">system.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

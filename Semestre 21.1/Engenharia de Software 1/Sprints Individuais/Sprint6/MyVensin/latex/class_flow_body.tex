@@ -1,0 +1,235 @@
+\hypertarget{class_flow_body}{}\doxysection{Referência da Classe Flow\+Body}
+\label{class_flow_body}\index{FlowBody@{FlowBody}}
+
+
+Class \mbox{\hyperlink{class_flow_body}{Flow\+Body}}.  
+
+
+
+
+{\ttfamily \#include $<$flow\+Impl.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Flow\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Flow\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_flow_body__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_body_a3a964466764a23f3d50ef39537852b1a}{Flow\+Body}} (string nome=\char`\"{}\char`\"{}, \mbox{\hyperlink{class_system}{System}} $\ast$origem=NULL, \mbox{\hyperlink{class_system}{System}} $\ast$destino=NULL)
+\item 
+virtual \mbox{\hyperlink{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}{$\sim$\+Flow\+Body}} ()
+\item 
+virtual double \mbox{\hyperlink{class_flow_body_a05dd380b61b8e336528a507fd81882ac}{run}} ()=0
+\item 
+string \mbox{\hyperlink{class_flow_body_af31b864e9ac8a74138f3a6eba06d2511}{get\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a22be4c174296efa4d94320a5b1800cad}{set\+Nome}} (string nome)
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_a6e7df1b965d902d89f1bbedfe07567b1}{get\+Origem}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_ad51056de731e2b1668e8e87d35956500}{set\+Origem}} (\mbox{\hyperlink{class_system}{System}} $\ast$origem)
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_ac74c0681406abebde6a7d53e794b190b}{get\+Destino}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a452fed00a76192805b3e2942dad40655}{set\+Destino}} (\mbox{\hyperlink{class_system}{System}} $\ast$destino)
+\item 
+void \mbox{\hyperlink{class_flow_body_ad725a01ccb0ffbbb07cb2908a4dbb911}{limpar\+Origem}} ()
+\item 
+void \mbox{\hyperlink{class_flow_body_a41ebb8f9f1e63bb0f50dc54f5d0870bd}{limpar\+Destino}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. 
+
+Essa classe representa um flow de um \char`\"{}modelo\char`\"{} de sistema do código. 
+
+Definição na linha \mbox{\hyperlink{flow_impl_8hpp_source_l00016}{16}} do arquivo \mbox{\hyperlink{flow_impl_8hpp_source}{flow\+Impl.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_flow_body_a3a964466764a23f3d50ef39537852b1a}\label{class_flow_body_a3a964466764a23f3d50ef39537852b1a}} 
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{FlowBody()}{FlowBody()}}
+{\footnotesize\ttfamily Flow\+Body\+::\+Flow\+Body (\begin{DoxyParamCaption}\item[{string}]{nome = {\ttfamily \char`\"{}\char`\"{}},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{origem = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{destino = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Construtor mais elaborado para a classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & nome para o flow \\
+\hline
+{\em origem} & ponteiro para o sistema origem do \mbox{\hyperlink{class_flow}{Flow}}. \\
+\hline
+{\em destino} & a pointer to the target system of the \mbox{\hyperlink{class_flow}{Flow}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\mbox{\hyperlink{class_flow}{Flow}} -\/ Um objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00007}{7}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}\label{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}} 
+\index{FlowBody@{FlowBody}!````~FlowBody@{$\sim$FlowBody}}
+\index{````~FlowBody@{$\sim$FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$FlowBody()}{~FlowBody()}}
+{\footnotesize\ttfamily Flow\+Body\+::$\sim$\+Flow\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Um metodo virtual puro que será herdado pelas subclasses criadas pelo usuario, e irar conter a equacao que será executada pelo model 
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00009}{9}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_flow_body_ac74c0681406abebde6a7d53e794b190b}\label{class_flow_body_ac74c0681406abebde6a7d53e794b190b}} 
+\index{FlowBody@{FlowBody}!getDestino@{getDestino}}
+\index{getDestino@{getDestino}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getDestino()}{getDestino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+Body\+::get\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo $\ast$destino do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. \begin{DoxyReturn}{Retorna}
+System$\ast$ -\/ o ponteiro do sistema de saída. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00023}{23}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_flow_body_ac74c0681406abebde6a7d53e794b190b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_body_af31b864e9ac8a74138f3a6eba06d2511}\label{class_flow_body_af31b864e9ac8a74138f3a6eba06d2511}} 
+\index{FlowBody@{FlowBody}!getNome@{getNome}}
+\index{getNome@{getNome}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily string Flow\+Body\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo nome do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. \begin{DoxyReturn}{Retorna}
+string -\/ o conteúdo de atributo nome. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00011}{11}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_a6e7df1b965d902d89f1bbedfe07567b1}\label{class_flow_body_a6e7df1b965d902d89f1bbedfe07567b1}} 
+\index{FlowBody@{FlowBody}!getOrigem@{getOrigem}}
+\index{getOrigem@{getOrigem}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getOrigem()}{getOrigem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+Body\+::get\+Origem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o atributo $\ast$origem do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. \begin{DoxyReturn}{Retorna}
+System$\ast$ -\/ o ponteiro do sistema de origem. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00017}{17}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_flow_body_a6e7df1b965d902d89f1bbedfe07567b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_body_a41ebb8f9f1e63bb0f50dc54f5d0870bd}\label{class_flow_body_a41ebb8f9f1e63bb0f50dc54f5d0870bd}} 
+\index{FlowBody@{FlowBody}!limparDestino@{limparDestino}}
+\index{limparDestino@{limparDestino}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{limparDestino()}{limparDestino()}}
+{\footnotesize\ttfamily void Flow\+Body\+::limpar\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Limpa o campo de sistema de destino do \mbox{\hyperlink{class_flow}{Flow}} atual 
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00037}{37}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_ad725a01ccb0ffbbb07cb2908a4dbb911}\label{class_flow_body_ad725a01ccb0ffbbb07cb2908a4dbb911}} 
+\index{FlowBody@{FlowBody}!limparOrigem@{limparOrigem}}
+\index{limparOrigem@{limparOrigem}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{limparOrigem()}{limparOrigem()}}
+{\footnotesize\ttfamily void Flow\+Body\+::limpar\+Origem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Limpa o campo de sistema de origem do \mbox{\hyperlink{class_flow}{Flow}} atual 
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00034}{34}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_a05dd380b61b8e336528a507fd81882ac}\label{class_flow_body_a05dd380b61b8e336528a507fd81882ac}} 
+\index{FlowBody@{FlowBody}!run@{run}}
+\index{run@{run}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual double Flow\+Body\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado por \mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{Flow\+Exponencial}}, \mbox{\hyperlink{class_flow_logistico_aa7c367618bbbfd3c14ef27b7c95a595c}{Flow\+Logistico}}, \mbox{\hyperlink{class_flow_complexo_a0513bff681502201db3fd243c8e9bac2}{Flow\+Complexo}} e \mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{Flow\+Exponencial}}.
+
+\mbox{\Hypertarget{class_flow_body_a452fed00a76192805b3e2942dad40655}\label{class_flow_body_a452fed00a76192805b3e2942dad40655}} 
+\index{FlowBody@{FlowBody}!setDestino@{setDestino}}
+\index{setDestino@{setDestino}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setDestino()}{setDestino()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Destino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{destino }\end{DoxyParamCaption})}
+
+Seta o atributo $\ast$destino do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em destino} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00026}{26}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_a22be4c174296efa4d94320a5b1800cad}\label{class_flow_body_a22be4c174296efa4d94320a5b1800cad}} 
+\index{FlowBody@{FlowBody}!setNome@{setNome}}
+\index{setNome@{setNome}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+Seta o atributo nome do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00014}{14}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+\mbox{\Hypertarget{class_flow_body_ad51056de731e2b1668e8e87d35956500}\label{class_flow_body_ad51056de731e2b1668e8e87d35956500}} 
+\index{FlowBody@{FlowBody}!setOrigem@{setOrigem}}
+\index{setOrigem@{setOrigem}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setOrigem()}{setOrigem()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Origem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{origem }\end{DoxyParamCaption})}
+
+Seta o atributo $\ast$origem do objeto da classe \mbox{\hyperlink{class_flow_body}{Flow\+Body}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{flow_impl_8cpp_source_l00020}{20}} do arquivo \mbox{\hyperlink{flow_impl_8cpp_source}{flow\+Impl.\+cpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{flow_impl_8hpp}{flow\+Impl.\+hpp}}\item 
+src/lib/\mbox{\hyperlink{flow_impl_8cpp}{flow\+Impl.\+cpp}}\end{DoxyCompactItemize}

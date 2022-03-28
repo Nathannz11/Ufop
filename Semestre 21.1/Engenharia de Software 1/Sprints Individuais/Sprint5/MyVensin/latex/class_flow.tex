@@ -1,0 +1,259 @@
+\hypertarget{class_flow}{}\doxysection{Referência da Classe Flow}
+\label{class_flow}\index{Flow@{Flow}}
+
+
+Class \mbox{\hyperlink{class_flow}{Flow}}.  
+
+
+
+
+{\ttfamily \#include $<$flow.\+hpp$>$}
+
+
+
+Diagrama de hierarquia para Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{$\sim$\+Flow}} ()
+\item 
+virtual double \mbox{\hyperlink{class_flow_a1cac6068ee3ed3f03fa0708640eb2f02}{run}} ()=0
+\item 
+virtual string \mbox{\hyperlink{class_flow_a2ad32ea2a8560b5481bfadcd4129e0d4}{get\+Nome}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a96d2681e6e89f046994c820c2ea8277f}{set\+Nome}} (string nome)=0
+\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a81e51a948e701f5cfe1f2ac3de495f35}{get\+Origem}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_ac44d89bdf6346de3b48fc70ba356769b}{set\+Origem}} (\mbox{\hyperlink{class_system}{System}} $\ast$origem)=0
+\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a2479d9e9c9f75229f5ad437a54517bee}{get\+Destino}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a9e9e29573910a1ddc84fd64f45a45641}{set\+Destino}} (\mbox{\hyperlink{class_system}{System}} $\ast$destino)=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_aa52350c523a0f1896badb23f5c8284a0}{limpar\+Origem}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_ad9d83146cdea496d4895ccdbeac17932}{limpar\+Destino}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_flow_a2bf2a0e9b454c55aa5dcb5aa4698697b}{Model}}
+\item 
+class \mbox{\hyperlink{class_flow_afb81d2077780e342b8fd3654cabc4c19}{Model\+Impl}}
+\item 
+class \mbox{\hyperlink{class_flow_a721d5d04f522e83ced8e0b615c21fcda}{Unit\+Flow}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_flow}{Flow}}. 
+
+Essa classe representa um flow de um \char`\"{}modelo\char`\"{} de sistema do código. 
+
+Definição na linha \mbox{\hyperlink{flow_8hpp_source_l00015}{15}} do arquivo \mbox{\hyperlink{flow_8hpp_source}{flow.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_flow_a325d284a50ca3274b126b21f5c39b9af}\label{class_flow_a325d284a50ca3274b126b21f5c39b9af}} 
+\index{Flow@{Flow}!````~Flow@{$\sim$Flow}}
+\index{````~Flow@{$\sim$Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{$\sim$Flow()}{~Flow()}}
+{\footnotesize\ttfamily virtual Flow\+::$\sim$\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Um metodo virtual puro que será herdado pelas subclasses criadas pelo usuario, e irar conter a equacao que será executada pelo model 
+
+Definição na linha \mbox{\hyperlink{flow_8hpp_source_l00024}{24}} do arquivo \mbox{\hyperlink{flow_8hpp_source}{flow.\+hpp}}.
+
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_flow_a2479d9e9c9f75229f5ad437a54517bee}\label{class_flow_a2479d9e9c9f75229f5ad437a54517bee}} 
+\index{Flow@{Flow}!getDestino@{getDestino}}
+\index{getDestino@{getDestino}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getDestino()}{getDestino()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retorna o atributo $\ast$destino do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. \begin{DoxyReturn}{Retorna}
+System$\ast$ -\/ o ponteiro do sistema de saída. 
+\end{DoxyReturn}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_ac85639e03febf755c7f12a77acda2d6a}{Flow\+Impl}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a2479d9e9c9f75229f5ad437a54517bee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_a2ad32ea2a8560b5481bfadcd4129e0d4}\label{class_flow_a2ad32ea2a8560b5481bfadcd4129e0d4}} 
+\index{Flow@{Flow}!getNome@{getNome}}
+\index{getNome@{getNome}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily virtual string Flow\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retorna o atributo nome do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. \begin{DoxyReturn}{Retorna}
+string -\/ o conteúdo de atributo nome. 
+\end{DoxyReturn}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a4bf90a6cb66941782824a0fc203d48d6}{Flow\+Impl}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a2ad32ea2a8560b5481bfadcd4129e0d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_a81e51a948e701f5cfe1f2ac3de495f35}\label{class_flow_a81e51a948e701f5cfe1f2ac3de495f35}} 
+\index{Flow@{Flow}!getOrigem@{getOrigem}}
+\index{getOrigem@{getOrigem}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getOrigem()}{getOrigem()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Origem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retorna o atributo $\ast$origem do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. \begin{DoxyReturn}{Retorna}
+System$\ast$ -\/ o ponteiro do sistema de origem. 
+\end{DoxyReturn}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a8d29d8b1e70224528ad7ff2d6a1baf0e}{Flow\+Impl}}.
+
+Esse é o diagrama das funções que utilizam essa função\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_a81e51a948e701f5cfe1f2ac3de495f35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_flow_ad9d83146cdea496d4895ccdbeac17932}\label{class_flow_ad9d83146cdea496d4895ccdbeac17932}} 
+\index{Flow@{Flow}!limparDestino@{limparDestino}}
+\index{limparDestino@{limparDestino}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{limparDestino()}{limparDestino()}}
+{\footnotesize\ttfamily virtual void Flow\+::limpar\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Limpa o campo de sistema de destino do \mbox{\hyperlink{class_flow}{Flow}} atual 
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a851c5be8e3e9cd29ac01042dd8c360ca}{Flow\+Impl}}.
+
+\mbox{\Hypertarget{class_flow_aa52350c523a0f1896badb23f5c8284a0}\label{class_flow_aa52350c523a0f1896badb23f5c8284a0}} 
+\index{Flow@{Flow}!limparOrigem@{limparOrigem}}
+\index{limparOrigem@{limparOrigem}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{limparOrigem()}{limparOrigem()}}
+{\footnotesize\ttfamily virtual void Flow\+::limpar\+Origem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Limpa o campo de sistema de origem do \mbox{\hyperlink{class_flow}{Flow}} atual 
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a5924bef0363623f716b5522eb773ad0a}{Flow\+Impl}}.
+
+\mbox{\Hypertarget{class_flow_a1cac6068ee3ed3f03fa0708640eb2f02}\label{class_flow_a1cac6068ee3ed3f03fa0708640eb2f02}} 
+\index{Flow@{Flow}!run@{run}}
+\index{run@{run}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual double Flow\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado por \mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{Flow\+Exponencial}}, \mbox{\hyperlink{class_flow_logistico_aa7c367618bbbfd3c14ef27b7c95a595c}{Flow\+Logistico}}, \mbox{\hyperlink{class_flow_complexo_a0513bff681502201db3fd243c8e9bac2}{Flow\+Complexo}}, \mbox{\hyperlink{class_flow_exponencial_a09f9f3c4f0b616b6aa2198497535bdc8}{Flow\+Exponencial}} e \mbox{\hyperlink{class_flow_impl_af90cb4a2878efc4382c1f9d6a7e13ea6}{Flow\+Impl}}.
+
+\mbox{\Hypertarget{class_flow_a9e9e29573910a1ddc84fd64f45a45641}\label{class_flow_a9e9e29573910a1ddc84fd64f45a45641}} 
+\index{Flow@{Flow}!setDestino@{setDestino}}
+\index{setDestino@{setDestino}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setDestino()}{setDestino()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Destino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Seta o atributo $\ast$destino do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em destino} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_ae471a6b7dfb0457997910dccc8657e8c}{Flow\+Impl}}.
+
+\mbox{\Hypertarget{class_flow_a96d2681e6e89f046994c820c2ea8277f}\label{class_flow_a96d2681e6e89f046994c820c2ea8277f}} 
+\index{Flow@{Flow}!setNome@{setNome}}
+\index{setNome@{setNome}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Seta o atributo nome do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a42755a99bcf5033fa16361548e9c22e9}{Flow\+Impl}}.
+
+\mbox{\Hypertarget{class_flow_ac44d89bdf6346de3b48fc70ba356769b}\label{class_flow_ac44d89bdf6346de3b48fc70ba356769b}} 
+\index{Flow@{Flow}!setOrigem@{setOrigem}}
+\index{setOrigem@{setOrigem}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setOrigem()}{setOrigem()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Origem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{origem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Seta o atributo $\ast$origem do objeto da classe \mbox{\hyperlink{class_flow}{Flow}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & que será setado ao flow atual. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{class_flow_impl_a04150207085ae98278fde8f81f1accf9}{Flow\+Impl}}.
+
+
+
+\doxysubsection{Amigas e Funções Relacionadas}
+\mbox{\Hypertarget{class_flow_a2bf2a0e9b454c55aa5dcb5aa4698697b}\label{class_flow_a2bf2a0e9b454c55aa5dcb5aa4698697b}} 
+\index{Flow@{Flow}!Model@{Model}}
+\index{Model@{Model}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_model}{Model}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+This Class represents a model in the General Systems Theory implemented in this code. 
+
+Definição na linha \mbox{\hyperlink{flow_8hpp_source_l00019}{19}} do arquivo \mbox{\hyperlink{flow_8hpp_source}{flow.\+hpp}}.
+
+\mbox{\Hypertarget{class_flow_afb81d2077780e342b8fd3654cabc4c19}\label{class_flow_afb81d2077780e342b8fd3654cabc4c19}} 
+\index{Flow@{Flow}!ModelImpl@{ModelImpl}}
+\index{ModelImpl@{ModelImpl}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{ModelImpl}{ModelImpl}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_model_impl}{Model\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+This Class represents a model in the General Systems Theory implemented in this code. 
+
+Definição na linha \mbox{\hyperlink{flow_8hpp_source_l00020}{20}} do arquivo \mbox{\hyperlink{flow_8hpp_source}{flow.\+hpp}}.
+
+\mbox{\Hypertarget{class_flow_a721d5d04f522e83ced8e0b615c21fcda}\label{class_flow_a721d5d04f522e83ced8e0b615c21fcda}} 
+\index{Flow@{Flow}!UnitFlow@{UnitFlow}}
+\index{UnitFlow@{UnitFlow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{UnitFlow}{UnitFlow}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_unit_flow}{Unit\+Flow}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definição na linha \mbox{\hyperlink{flow_8hpp_source_l00021}{21}} do arquivo \mbox{\hyperlink{flow_8hpp_source}{flow.\+hpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{flow_8hpp}{flow.\+hpp}}\end{DoxyCompactItemize}

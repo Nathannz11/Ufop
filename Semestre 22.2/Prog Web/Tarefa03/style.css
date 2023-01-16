@@ -1,0 +1,21 @@
+*{
+    font-family: sans-serif;  
+}
+
+body {
+    background-color: black;
+}
+
+#titulo {
+    color: red;
+}
+
+h2 {
+    color: white;
+}
+
+img {
+    border: 1px solid white;
+}
+
+

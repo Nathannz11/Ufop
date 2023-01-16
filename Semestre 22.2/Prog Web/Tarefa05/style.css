@@ -1,0 +1,62 @@
+/*
+    Nathann Zini dos Reis 19.2.4007
+    Enya Luisa Gomes dos Santos 19.2.4201
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background: rgb(168, 234, 168);
+    padding: 20px;
+}
+
+.main {
+    background: lavender;
+
+}
+
+
+.sec-1, .sec-3 {
+    width: 50%;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    border: 4px black solid;
+    margin: 20px auto;
+}
+
+.sec-2, .sec-4 {
+    width: 100%;
+    font-family:  Tahoma;
+    font-size: 14px;
+    text-align: right;
+    border: 4px red solid;
+    
+}
+
+.sec-3 {
+    color: #8B4513;
+    font-weight: normal;
+    line-height: 2;
+}
+.sec-4 {
+    color: #FF4500;
+    font-family: Arial;
+    text-align: left;
+}
+
+.footer {
+    background: black;
+    text-align: center;
+    color: white;
+}

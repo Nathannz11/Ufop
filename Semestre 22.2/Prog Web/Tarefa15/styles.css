@@ -1,0 +1,9 @@
+/* //Nathann Zini dos Reis 19.2.4007  
+//Feito junto com Enya Santos
+*/
+button {
+    display: block;
+    font-size: 24pt;
+    width: 100px;
+    margin: 5px 0;
+}

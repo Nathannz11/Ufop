@@ -1,0 +1,14 @@
+{
+    "name" : "ImagensBR",
+    "version" : "1.0",
+    "description" : "Contar quantidade de imagens presente numa página web e substituir todas.",
+    "content_scripts" : [
+        {
+            "matches" : ["*://*.br/*"],
+            "css": ["style.css"],
+            "js" : ["page.js"],
+            "run_at" : "document_idle"
+        }
+    ],
+    "manifest_version" : 2
+}

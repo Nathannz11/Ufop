@@ -1,0 +1,11 @@
+#text-counter{
+    color: #000;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    position: fixed;
+    z-index: 1111111111111;
+    width: 100%;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,76 @@
+<!--
+    Feito junto com Enya Santos
+    Nathann Zini dos Reis
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Signin/Signup de usuário</h1>
+    <p id="message"></p>
+    <form>
+        <label for="username">Usuário</label>
+        <input type="text" name="username" id="username">
+         <label for="password">Senha</label>
+        <input type="password" name="password" id="password">
+        <button id="signup" type="submit">Cadastrar</button>
+        <button id="signin" type="submit">Logar</button>
+    </form>
+    
+    <script>
+        const btnSignup = document.getElementById("signup");
+        const btnSignin = document.getElementById("signin");
+        const message = document.getElementById("message");
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = encodeURIComponent(document.querySelector('#username').value);
+            const password = encodeURIComponent(document.querySelector('#password').value);
+            const action = e.submitter.id;
+            if(action === 'signin') {
+                fetch('/signin', {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({username, password})
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if(data.user)
+                        message.innerText = `Usuario ${data.user.username} logado.`
+                    else
+                        message.innerText = `Usuário não existe.`
+                })
+                .catch((error) => {
+                    message.innerText = `Ops algo deu errado ao tentar logar, tente novamente.`
+                });
+            } else if(action === 'signup') {
+                fetch('/signup', {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({username, password})
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if(data.user)
+                        message.innerText = `Usuario cadastrado com sucesso.`
+                })
+                .catch((error) => {
+                    message.innerText = `Ops algo deu errado ao tentar cadastrar, tente novamente.`
+                });
+            }
+            
+        })  
+    </script>
+</body>
+</html>

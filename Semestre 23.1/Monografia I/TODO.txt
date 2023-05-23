@@ -1,0 +1,22 @@
+tamanho tablet =960 --
+
+
+
+rodar
+
+entrar ambiente virtual
+	activate
+desativar
+	deactivate
+rodar o server 
+	py manage.py runserver
+
+
+
+responsividade
+	/login-as
+	/login-credentials
+	/avaliacao-potencial-esportivo
+
+temrinar tela de avaliar atleta
+tela de avaliação do treinador (3)

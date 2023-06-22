@@ -2,3 +2,12 @@ apresentar o goldfit / sistema todo
 fazer literatura sobre artigos de integração  de modleo de aprendizado de maquina com o sistema web
 falar/mostrar minha contribuição até o momento.
 mostrar como o sistema/modelo/integração irá se desenvolver na mono II
+
+
+
+contorle de versão - salvando historico de atletas em versao especifica da base de dados
+
+exportar dados para uma planilha excel a partir do sistema web enquanto adm
+
+
+
